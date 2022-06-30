@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body onload="posicionDelUsuario()">
+    <main>
+        <div class="contenedor">
+            <h2 id="ciudad" class="bold center"></h2>
+            <h1 id="tempActual" class="temp bold"></h1>
+            <div class="contenedorIcon">
+                <img id="icon" class="icon" src="" alt="icono">
+            </div>
+            <h3 id="descripcion" class="bold"></h3>
+            <div class="containerTempDelDia">
+                <h4 id="sensacionTermica" class="termica center"></h4>
+                <div class="alineacion min-max">
+                    <img src="assets/min.png" alt="">
+                    <h4 id="min" class="center inline"></h4>
+                </div>
+                <div class="alineacion min-max">
+                    <img src="assets/max.png" alt="">
+                    <h4 id="max" class="center inline"></h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="contenedorAside">
+            <div class="alineacion">
+            <img class="medidasIconos" src="assets/humedad.png" alt="icono humedad">
+            <h3 id="humedad" class="inline bold"></h3>
+            </div>
+            <div class="alineacion">
+            <img class="medidasIconos" src="assets/viento.png" alt="icono viento">
+            <h3 id="viento" class="inline bold"></h3>
+            </div>
+            <div class="alineacion">
+            <img class="medidasIconos" src="assets/presion.png" alt="icono presion">
+            <h3 id="presion" class="inline bold"></h3>
+            </div>
+            <div class="alineacion">
+            <img class="medidasIconos" src="assets/visiblidad.png" alt="icono visibilidad">
+            <h3 id="visibilidad" class="inline bold"></h3>
+            </div>
+            <div class="coordenadas alineacion">
+                <h4 id="lat" class="center"></h4>
+                <h4 id="lon" class="center"></h4>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>

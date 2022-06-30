@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background: rgb(36,0,70);
+    background: -moz-linear-gradient(180deg, rgba(36,0,70,1) 50%, rgba(157,78,221,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(36,0,70,1) 50%, rgba(157,78,221,1) 100%);
+    background: linear-gradient(180deg, rgba(36,0,70,1) 50%, rgba(157,78,221,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#240046",endColorstr="#9d4edd",GradientType=1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    margin: 5rem;
+    border-radius: 40px;
+    background: #240046;
+    box-shadow:  20px 20px 0px #0e001c,
+                 -20px -20px 0px #3a0070;
+    width: 390px;
+    height: 430px;
+}
+h1,
+h2,
+h3,
+h4{
+    color: #EAE2B7;
+}
+.contenedor{
+    padding: 1.2rem;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 120px 1fr 1fr;
+}
+.contenedorIcon{
+    width: 26.95%;
+    height: 83.33%;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+}
+.temp{
+    font-size: 100px;
+}
+.containerTempDelDia{
+    display: grid;
+    grid-template-areas: "termica termica" 
+                         "min max";
+}
+.termica{
+    grid-area: termica;
+}
+aside{
+    margin: 5rem;
+    border-radius: 64px;
+    background: #9D4EDD;
+    box-shadow:  20px 20px 0px #3f1f58,
+                 -20px -20px 0px #fb7dff;
+    width: 390px;
+    height: 430px;
+}
+.contenedorAside{
+    padding: 1.2rem;
+    height: 100%;
+    display: grid;
+}
+
+.alineacion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.medidasIconos{
+    width: 50px;
+    height: 50px;
+}
+.coordenadas{
+    display: grid;
+    grid-template-areas: "lat lon";
+}
+.bold{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+    margin: 0;
+}
+.inline{
+    display: inline;
+}
+.min-max{
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+@media (max-width: 1030px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
